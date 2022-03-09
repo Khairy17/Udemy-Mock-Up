@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- JavaScript Bundle with Popper -->
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                    <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="" width="90">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Business</a></li>
+                          <li><a class="dropdown-item" href="#">Development</a></li>
+                         
+                        </ul>
+                      </li>
+                  <li class="nav-item flex-auto" >
+                    <form class="d-flex">
+                        <input class="form-control rounded-pill" type="search" placeholder="Search" aria-label="Search">
+
+                      </form>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Teach on Udemy</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Udemy Business</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" ><i class="bi bi-cart2"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"><button type="button" class="btn btn-outline-dark">Login</button>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"><button type="button" class="btn btn-dark">Sign Up</button>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"><button type="button" class="btn btn-outline-dark"><i class="bi bi-globe"></i></button>
+                    </a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="container">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://img-c.udemycdn.com/notices/web_banner/slide_1_image_udlite/0208fa3b-eb5b-4c94-8550-fb4a95494876.jpg" alt="First slide">
+            <div class="header-banner">
+                <h4>First Slide Carousel Mocking up Udemy, sign up for more great courses.</h4>
+                <p><a href="#"></a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://img-c.udemycdn.com/notices/web_banner/slide_1_image_udlite/0208fa3b-eb5b-4c94-8550-fb4a95494876.jpg" alt="Second slide">
+            <div class="header-banner">
+                <h4>Expand your opportunities by following the greatest courses of all time.</h4>
+                <p><a href="#"></a></p>
+        </div>
+        </div>
+        <style>
+            .header-banner{
+                position: absolute;
+                top:30%;
+                left: 20%;
+                width: 300px;
+                max-width: 200px;
+                background-color: white;
+                padding: 20px;
+            }
+            h4{
+                font-size: 20px;
+            }
+            .arrow{
+                
+                height: 5rem;
+                width: 5rem;
+                margin-left: 3rem;
+                margin-right: 3rem;
+                position:absolute;
+                top: 50%;
+            }
+            .iconprev,.iconnext{
+                color: black;
+            }
+            
+        
+        </style>
+        <a class="carousel-control-prev arrow" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only  iconprev">Previous</span>
+        </a>
+        <a class="carousel-control-next arrow" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon " aria-hidden="true"></span>
+          <span class="sr-only iconnext">Next</span>
+        </a>
+      </div>
+    </div>
+  <section>
+    <div class="container">
+      <h5>Recommended Classes for all students</h5>
+      <p>It is great that you are following up with our featured courses on Udemy, We provide wide range of courses that provides the best outcome for all people</p>
+      <div class="featured-courses">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button data-tab="python"class="nav-link text-dark active b1" id="Python-tab" data-bs-toggle="tab" data-bs-target="#Python" type="button" role="tab" aria-controls="Python" aria-selected="true">Pyhton</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button data-tab="html"class="nav-link text-dark b1" id="HTML-tab" data-bs-toggle="tab" data-bs-target="#HTML" type="button" role="tab" aria-controls="HTML" aria-selected="false">HTML</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button data-tab="javascript" class="nav-link text-dark b1" id="JavaScript-tab" data-bs-toggle="tab" data-bs-target="#JavaScript" type="button" role="tab" aria-controls="JavaScript" aria-selected="false">JavaScript</button>
+          </li>
+        </ul>
+        
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="Python" role="tabpanel" aria-labelledby="Python-tab">
+            <div class="tab-pane-content">
+              <h2>Expand your career opportunities with Python
+              </h2>
+              <p>It is great that you are following up with our featured courses on Udemy, We provide wide range of courses that provides the best outcome for all people.</p>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+            
+            <div class="carousel-cards">
+              <div id="featured-courses-python" class="carousel slide featured-courses-python" data-ride="carousel">
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <div class="col-md-3">
+                      <div class="course-cards">
+                        <div class="course-image">
+                          <img class="d-block" src="data:image/png;base64,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" alt="First slide">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-description">  Python for begginers, functions and data structure.all in one course</span>
+                          <span class="course-teacher">Khairy Zaza</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.5</span>
+                            <span class="course-rating-star">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="course-rating-total">41.0000</span>
+                          </span>
+                          <span class="course-price">129.00$
+                            <span class="course-discount">30%</span>
+                          </span>
+                          <span class="course-bestseller">Bestseller</span>
+                          
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="course-cards">
+                      <div class="course-image">
+                        <img class="d-block" src="data:image/png;base64,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" alt="First slide">
+                      </div>
+                      <div class="course-body">
+                        <span class="course-description">  Python for begginers, functions and data structure.all in one course</span>
+                        <span class="course-teacher">Khairy Zaza</span>
+                        <span class="course-rating">
+                          <span class="course-rating-number">3.5</span>
+                          <span class="course-rating-star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                          </span>
+                          <span class="course-rating-total">41.0000</span>
+                        </span>
+                        <span class="course-price">129.00$
+                          <span class="course-discount">30%</span>
+                        </span>
+                        <span class="course-bestseller">Bestseller</span>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="course-cards">
+                    <div class="course-image">
+                      <img class="d-block" src="data:image/png;base64,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" alt="First slide">
+                    </div>
+                    <div class="course-body">
+                      <span class="course-description">  Python for begginers, functions and data structure.all in one course</span>
+                      <span class="course-teacher">Khairy Zaza</span>
+                      <span class="course-rating">
+                        <span class="course-rating-number">3.5</span>
+                        <span class="course-rating-star">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                        </span>
+                        <span class="course-rating-total">41.0000</span>
+                      </span>
+                      <span class="course-price">129.00$
+                        <span class="course-discount">30%</span>
+                      </span>
+                      <span class="course-bestseller">Bestseller</span>
+                      
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="course-cards">
+                  <div class="course-image">
+                    <img class="d-block" src="data:image/png;base64,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" alt="First slide">
+                  </div>
+                  <div class="course-body">
+                    <span class="course-description">  Python for begginers, functions and data structure.all in one course</span>
+                    <span class="course-teacher">Khairy Zaza</span>
+                    <span class="course-rating">
+                      <span class="course-rating-number">3.5</span>
+                      <span class="course-rating-star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </span>
+                      <span class="course-rating-total">41.0000</span>
+                    </span>
+                    <span class="course-price">129.00$
+                      <span class="course-discount">30%</span>
+                    </span>
+                    <span class="course-bestseller">Bestseller</span>
+                    
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="course-cards">
+                <div class="course-image">
+                  <img class="d-block" src="data:image/png;base64,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" alt="First slide">
+                </div>
+                <div class="course-body">
+                  <span class="course-description">  Python for begginers, functions and data structure.all in one course</span>
+                  <span class="course-teacher">Khairy Zaza</span>
+                  <span class="course-rating">
+                    <span class="course-rating-number">3.5</span>
+                    <span class="course-rating-star">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </span>
+                    <span class="course-rating-total">41.0000</span>
+                  </span>
+                  <span class="course-price">129.00$
+                    <span class="course-discount">30%</span>
+                  </span>
+                  <span class="course-bestseller">Bestseller</span>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+        
+      
+                 
+
+                  
+              </div>
+                <a class="carousel-control-prev" href="#featured-courses-python" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#featured-courses-python" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>  
+                
+
+          </div>
+
+          <div class="tab-pane fade" id="HTML" role="tabpanel" aria-labelledby="HTML-tab">
+            <div class="tab-pane-content">
+              <h2>Expand your career opportunities with HTML
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim voluptas inventore accusamus exercitationem sed? Inventore quasi vitae necessitatibus dolor, pariatur, voluptatem quia maxime, suscipit natus eius quas. Ipsum, obcaecati.</p>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+            <div class="carousel-cards">
+              <div id="featured-courses-html" class="carousel slide featured-courses-html" data-ride="carousel">
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <div class="col-md-3">
+                      <div class="course-cards">
+                        <div class="course-image">
+                          <img class="d-block" src="data:image/webp;base64,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" alt="First slide">
+                        </div>
+                        <div class="course-body">
+                          <span class="course-description">  HTML for begginers, functions and data structure.all in one course</span>
+                          <span class="course-teacher">Khairy Zaza</span>
+                          <span class="course-rating">
+                            <span class="course-rating-number">3.5</span>
+                            <span class="course-rating-star">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="course-rating-total">41.0000</span>
+                          </span>
+                          <span class="course-price">129.00$
+                            <span class="course-discount">30%</span>
+                          </span>
+                          <span class="course-bestseller">Bestseller</span>
+                          
+                        </div>
+                      </div>
+                  </div>
+                </div>
+               <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="course-cards">
+                      <div class="course-image">
+                        <img class="d-block" src="data:image/webp;base64,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" alt="First slide">
+                      </div>
+                      <div class="course-body">
+                        <span class="course-description">  HTML for begginers, functions and data structure.all in one course</span>
+                        <span class="course-teacher">Khairy Zaza</span>
+                        <span class="course-rating">
+                          <span class="course-rating-number">3.5</span>
+                          <span class="course-rating-star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                          </span>
+                          <span class="course-rating-total">41.0000</span>
+                        </span>
+                        <span class="course-price">129.00$
+                          <span class="course-discount">30%</span>
+                        </span>
+                        <span class="course-bestseller">Bestseller</span>
+                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+             <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="course-cards">
+                    <div class="course-image">
+                      <img class="d-block" src="data:image/webp;base64,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" alt="First slide">
+                    </div>
+                    <div class="course-body">
+                      <span class="course-description">  HTML for begginers, functions and data structure.all in one course</span>
+                      <span class="course-teacher">Khairy Zaza</span>
+                      <span class="course-rating">
+                        <span class="course-rating-number">3.5</span>
+                        <span class="course-rating-star">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                        </span>
+                        <span class="course-rating-total">41.0000</span>
+                      </span>
+                      <span class="course-price">129.00$
+                        <span class="course-discount">30%</span>
+                      </span>
+                      <span class="course-bestseller">Bestseller</span>
+                      
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+          <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="course-cards">
+                  <div class="course-image">
+                    <img class="d-block" src="data:image/webp;base64,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" alt="First slide">
+                  </div>
+                  <div class="course-body">
+                    <span class="course-description">  HTMLfor begginers, functions and data structure.all in one course</span>
+                    <span class="course-teacher">Khairy Zaza</span>
+                    <span class="course-rating">
+                      <span class="course-rating-number">3.5</span>
+                      <span class="course-rating-star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </span>
+                      <span class="course-rating-total">41.0000</span>
+                    </span>
+                    <span class="course-price">129.00$
+                      <span class="course-discount">30%</span>
+                    </span>
+                    <span class="course-bestseller">Bestseller</span>
+                    
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="course-cards">
+                <div class="course-image">
+                  <img class="d-block" src="data:image/webp;base64,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" alt="First slide">
+                </div>
+                <div class="course-body">
+                  <span class="course-description">  HTML for begginers, functions and data structure.all in one course</span>
+                  <span class="course-teacher">Khairy Zaza</span>
+                  <span class="course-rating">
+                    <span class="course-rating-number">3.5</span>
+                    <span class="course-rating-star">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </span>
+                    <span class="course-rating-total">41.0000</span>
+                  </span>
+                  <span class="course-price">129.00$
+                    <span class="course-discount">30%</span>
+                  </span>
+                  <span class="course-bestseller">Bestseller</span>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+
+          
+      
+    
+                 
+
+                  
+              </div>
+                <a class="carousel-control-prev" href="#featured-courses-html" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#featured-courses-html" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>  
+
+            
+        
+                
+            
+            
+          </div>
+
+          <div class="tab-pane fade" id="JavaScript" role="tabpanel" aria-labelledby="JavaScript-tab">
+            <div class="tab-pane-content">
+              <h2>Expand your career opportunities with JavaScript
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim voluptas inventore accusamus exercitationem sed? Inventore quasi vitae necessitatibus dolor, pariatur, voluptatem quia maxime, suscipit natus eius quas. Ipsum, obcaecati.</p>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+         
+    
+  </section>
+  <section class="py-5">
+    <div class="container container-fluid bg-light">
+      <div class="row">
+        <div class="col md-4 skills">
+          <div class="col-image"><i class="bi bi-triangle-fill"></i></div>
+          <div class="col-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="col md-4 skills">
+          <div class="col-image"><i class="bi bi-star-fill"></i></div>
+          <div class="col-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="col md-4 skills">
+          <div class="col-image"><i class="bi bi-infinity"></i></div>
+          <div class="col-desc">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectet</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <h3>Top Categoris</h3>
+      <div class="categories">
+
+        <a href="#" class="category">
+          <div class="cateogry-img">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg" alt="">
+          </div>
+          <div class="category-desc">
+            Design
+          </div>
+        </a>
+        <a href="#" class="category">
+          <div class="cateogry-img">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg" alt="">
+          </div>
+          <div class="category-desc">
+            Development
+          </div>
+        </a>
+        <a href="#" class="category">
+          <div class="cateogry-img">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg" alt="">
+          </div>
+          <div class="category-desc">Marketing</div>
+        </a>
+        <a href="#" class="category">
+          <div class="cateogry-img">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg" alt="">
+          </div>
+          <div class="category-desc">IT</div>
+        </a>
+        <a href="#" class="category">
+          <div class="cateogry-img">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg" alt=""></div>
+          <div class="category-desc">Personal Development</div>
+          </a>
+        <a href="#" class="category">
+          <div class="cateogry-img">
+            <img src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg" alt=""></div>
+          <div class="category-desc">Business</div>
+          </a>
+        <a href="#" class="category">
+          <div class="cateogry-img"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg" alt=""></div>
+          <div class="category-desc">Photography</div>
+        </a>
+        <a href="#" class="category">
+          <div class="cateogry-img"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg" alt=""></div>
+          <div class="category-desc">Music</div>
+        </a>  
+        <a href="#" class="category">
+          <div class="cateogry-img"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg" alt=""></div>
+          <div class="category-desc">Music</div>
+        </a>  
+      </div>
+    </div>
+  </section>
+  
+    <footer>
+      <div class="container-fluid bg-dark text-light">
+        <div class="footer-menu">
+          <ul>
+            <li class="footer-item"><a href="#">Udemy Business</a></li>
+            <li class="footer-item"><a href="#">Teach on Udemy</a></li>
+            <li class="footer-item"><a href="#">Get the app</a></li>
+            <li class="footer-item"><a href="#">About us</a></li>
+            <li class="footer-item"><a href="#">Contact us</a></li>
+          </ul>
+          <ul>
+            <li class="footer-item"><a href="#">Careers</a></li>
+            <li class="footer-item"><a href="#">Resources</a></li>
+            <li class="footer-item"><a href="#">Affiliate</a></li>
+            <li class="footer-item"><a href="#">Investors</a></li>
+            <li class="footer-item"><a href="#">Blog</a></li>
+          </ul>
+          <ul>
+            <li class="footer-item"><a href="#">Terms</a></li>
+            <li class="footer-item"><a href="#">Privacy Seetings</a></li>
+            <li class="footer-item"><a href="#">Cookies Settings</a></li>
+            <li class="footer-item"><a href="#">Sitemap</a></li>
+            <li class="footer-item"><a href="#">Accessibility Statement</a></li>
+          </ul>
+          <div class="footer-button">
+            <button type="button" class="btn btn-outline-light">English</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="container-fluid bg-dark text-light sub-footer">
+      <div class="footer-logo">
+        <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
+      </div>
+      <div>
+        © 2022 Udemy, Inc.
+      </div>
+    </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+  <script src="/index.js"></script>
+</body>
+</html>

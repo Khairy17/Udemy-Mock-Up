@@ -1,0 +1,146 @@
+.flex-auto{
+    flex:auto;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.arrow{
+    background-color: black;
+}
+section{
+    margin:3rem auto;
+}
+.tab-pane{
+    border:1px solid;
+    border-top:0;
+    padding: 10px;
+    margin:5px;
+}
+.course-image{
+    border:1px solid black;
+    margin-top:5px;
+    margin-right: 4px;
+    margin-bottom: 5px;
+}
+.course-image>img{
+    width:100%;
+}
+.course-body{
+    padding:0.3rem;
+}
+.carousel-cards .featured-courses-python .carousel-item.active{
+    display: flex;
+}
+.carousel-cards .featured-courses-html .carousel-item.active{
+    display: flex;
+}
+.carousel-cards .featured-courses-javascript .carousel-item.active{
+    display: flex;
+}
+
+.course-description,.course-teacher,.course-price{
+    display: block;
+}
+.course-description{
+    font-weight: bold;
+}
+.course-teacher{
+    color:black;
+    font-size: 0.8rem;
+}
+.course-price{
+    font-weight: bold;
+    font-size:1.1rem;
+}
+.course-discount{
+    font-weight: normal;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+.course-bestseller{
+    padding:0.2rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #eceb98;
+}
+.course-rating{
+    font-size: 0.8rem;
+}
+.course-rating-star{
+    color:goldenrod;
+}
+.skills{
+    display: flex;
+}
+.col-image{
+    margin:7px;
+    background-color: lightgray;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2rem;
+    display: grid;
+    place-content: center;
+}
+.col-image>li{
+    padding: 1rem;
+}
+.col-desc{
+    font-weight: 500;
+    display: grid;
+    place-content: center;
+}
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.categories>a{
+    text-decoration: none;
+    color: black;
+}
+.category{
+    display: grid;
+    place-content: center;
+    flex: 1;
+}
+.cateogry-img{
+    transition: transform 150ms ease-in;
+}
+.cateogry-img:hover{
+    transform: scale(1.03);
+
+}
+.footer-menu{
+    display: flex;
+    padding:2rem 1rem;
+    margin:0%;
+    justify-content: space-between;
+}
+.footer-menu>ul{
+    font-size: .9rem;
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.footer-item>a{
+    color: white;
+    text-decoration: none;
+
+}
+.footer-item>a:hover{
+    color:lightgrey;
+}
+.sub-footer{
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-logo{
+    width:100px; 
+     margin-left:15px;
+}
+
+
+
